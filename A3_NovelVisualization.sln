@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A3_NovelVisualization", "A3_NovelVisualization.csproj", "{F9CD04B1-7A91-4ACA-A75F-F7CDDC706CAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9CD04B1-7A91-4ACA-A75F-F7CDDC706CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CD04B1-7A91-4ACA-A75F-F7CDDC706CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CD04B1-7A91-4ACA-A75F-F7CDDC706CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CD04B1-7A91-4ACA-A75F-F7CDDC706CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
