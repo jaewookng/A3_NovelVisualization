@@ -8,6 +8,23 @@ public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
+    
+    // add conditional for swapping between display functions
+    private bool _wordMode = true;
+    private void TextInputCallback(object sender, TextInputEventArgs args)
+    {
+        if (args.Character == '\r')
+        {
+            if (_wordMode)
+            {
+                _wordMode = false;
+            }
+            else
+            {
+                _wordMode = true;
+            }
+        }
+    }
 
     public Game1()
     {
@@ -19,6 +36,7 @@ public class Game1 : Game
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
+        Window.TextInput += TextInputCallback;
 
         base.Initialize();
     }
@@ -45,7 +63,17 @@ public class Game1 : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
         // TODO: Add your drawing code here
-
+        // draw call either of the two display functions - ideally two public classes with their own display method
+        _spriteBatch.Begin();
+        if (_wordMode)
+        {
+            displayAllWords();
+        }
+        else
+        {
+            displayAllWords();
+        }
+        _spriteBatch.End();
         base.Draw(gameTime);
     }
 }
